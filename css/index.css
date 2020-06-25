@@ -74,13 +74,17 @@
     text-align: center;
 }
 
-.battle h3 {
+.battle h3,
+.mobile h3,
+.emote h3 {
     font-size: 60px;
     font-weight: 700;
     color: white;
 }
 
-.battle p {
+.battle p,
+.mobile p,
+.emote p {
     font-size: 18px;
     font-weight: 700;
 }
@@ -117,16 +121,7 @@
     text-align: center;
 }
 
-.mobile h3 {
-    font-size: 60px;
-    font-weight: 700;
-    color: white;
-}
 
-.mobile p {
-    font-size: 18px;
-    font-weight: 700;
-}
 
 .mobile_demo {
     position: relative;
@@ -155,4 +150,74 @@
     left: 400px;
     width: 580px;
     z-index: 1;
+}
+
+/* emote start  */
+.emote {
+    position: relative;
+    background-color: yellow;
+    text-align: center;
+}
+
+.emote_char {
+    padding: 50px 0;
+}
+
+.emote_char .furyhorn {
+    width: 320px;
+}
+
+.emote_char .hauntling {
+    width: 320px;
+}
+
+.emote_char .hushtail {
+    width: 380px;
+}
+
+/* season3 start  */
+.season3 {
+    position: relative;
+    background-color: aliceblue;
+    height: 630px;
+}
+
+.season3 .season3_intro {
+    background-color: pink;
+    height: 550px;
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.season3_content {
+    height: 500px;
+    width: 500px;
+    padding: 40px 100px 0;
+}
+
+.season3_intro h6 {
+    color: black;
+    font-size: 18px;
+}
+
+.season3_intro h3 {
+    font-size: 60px;
+    color: #000;
+}
+
+.season3_intro p {
+    font-size: 16px;
+    color: #000;
+}
+
+.season3_intro h5 {
+    font-size: 12px;
+    color: #000;
+}
+
+.season3_intro img {
+    position: absolute;
+    top: 180px;
+    right: 30px;
+    width: 470px;
 }
