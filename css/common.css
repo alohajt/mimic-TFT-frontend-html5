@@ -10,10 +10,24 @@
   font-style: normal;
   font-display: block;
 }
+
+body {
+  font-family: Spiegel, NotoSans-Medium, "Arial Narrow", Arial, sans-serif;
+  
+}
+
+body {
+  cursor: default;
+  -webkit-tap-highlight-color: transparent;
+  color: rgb(11, 11, 12);
+  font-size: 16px;
+  background-color: rgb(254, 246, 243);
+}
 /* 版心 */
 .w {
   width: 1200px;
   margin: 0 auto;
+  /* background-color: orange !important; */
 }
 .fl {
   float: left;
@@ -46,6 +60,18 @@
   font-weight: 700;
 }
 
+.riot_fist {
+  width: 160px;
+  height: 160px;
+  background: url(../images/fistsprite.png) no-repeat;
+  background-position: 0 -2400px;
+  transition: background-position 0.15s ;
+}
+
+.riot_fist:hover {
+  background-position: 0 0;
+}
+
 .fr {
   color: white;
   margin: 0 10px 0;
@@ -67,7 +93,6 @@ footer {
 
 .copyright img {
   width: 200px;
-  margin-top: 50px;
 }
 
 .copyright ul li,

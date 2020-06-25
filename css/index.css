@@ -1,29 +1,54 @@
+h3 {
+    font-style: italic;
+    font-family: "Beaufort for LOL", NotoSans-Medium, serif;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    color: rgb(254, 246, 243);
+}
+
+button{
+    display: block;
+    height: 50px;
+    width: 230px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: skyblue;
+    transition: width 0.35s;
+}
+
+button:hover {
+    background-color: aliceblue;
+    width: 200px;
+}
+
 /* showpage  */
 .showpage {
-  height: 1000px;
+  height: 800px;
   background-color: orange;
   text-align: center;
 }
 
 .showpage .vid_container {
+    overflow: hidden;
   position: relative;
   height: 600px;
   width: 800px;
   margin: 0 auto;
 }
 
-.showpage .vid_container .vid {
-    height: 600px;
+.showpage .vid_container video {
+    margin-top: 60px;
+    height: 800px;
     width: 800px;
 }
 
 .showpage .vid_container .vid_cover {
   position: absolute;
-  top: 0;
+  top: 60px;
   right: 0;
   height: 600px;
   width: 800px;
-  background: rgb(0, 0, 0, 0.3) 
 }
 
 .showpage .vid_container .vid_cover>img {
@@ -32,7 +57,7 @@
   margin: 90px auto;
 }
 
-.showpage .vid_container .vid_cover button {
+/* .showpage .vid_container .vid_cover button {
     display: block;
     height: 50px;
     width: 230px;
@@ -43,7 +68,7 @@
 }
 .showpage .vid_container .vid_cover button:hover {
     background-color: aliceblue;
-}
+} */
 .showpage .vid_container .vid_cover h5 {
     font-size: 18px;
     font-weight: 700;
@@ -52,14 +77,12 @@
 }
 
 .showpage .vid_container .vid_cover .download_app {
-    background-color: blue;
     height: 100px;
     width: 400px;
     margin: 0 auto;
 }
 
 .showpage .vid_container .vid_cover .download_app .google_store {
-    background-color: gray;
     width: 150px;
 }
 
@@ -89,14 +112,14 @@
     font-weight: 700;
 }
 
-.battle button {
+/* .battle button {
     height: 50px;
     width: 230px;
     margin: 65px auto;
     font-size: 16px;
     font-weight: 700;
     background-color: skyblue;
-}
+} */
 
 .battle .pengu {
     position: absolute;
@@ -104,7 +127,12 @@
     right: -60px;
     width: 300px;
     z-index: 1;
+    transition: top 0.8s;
 }
+.battle .pengu:hover {
+    top: -195px;
+}
+
 
 .battle .portal {
     position: absolute;
@@ -112,16 +140,18 @@
     left: -60px;
     width: 300px;
     z-index: 1;
+    transition: transform 1.5s;
 }
 
+.battle .portal:hover {
+    transform: rotate(4deg);
+}
 
 /* mobile start  */
 .mobile {
     background-color: lightcoral;
     text-align: center;
 }
-
-
 
 .mobile_demo {
     position: relative;
@@ -131,17 +161,20 @@
 }
 
 .mobile_demo .phone_frame {
+    position: absolute;
+    top: 0px;
+    left: 200px;
     width: 800px;
-    z-index: 1;
+    z-index: 2;
 }
 
-.mobile_demo .phone_cover {
+.mobile_demo video {
     position: absolute;
     top: 80px;
-    left: 305px;
-    width: 590px;
-    height: 310px;
-
+    left: 100px;
+    width: 1000px;
+    height: 320px;
+    z-index: 1;
 }
 
 .mobile_demo .phone_cloud {
@@ -149,7 +182,7 @@
     top: 300px;
     left: 400px;
     width: 580px;
-    z-index: 1;
+    z-index: 3;
 }
 
 /* emote start  */
@@ -221,3 +254,146 @@
     right: 30px;
     width: 470px;
 }
+
+ /* lastest news start   */
+.latest_news {
+    height: 500px;
+    background-color: pink;
+}
+
+.news_header {
+    height: 100px;
+    line-height: 100px;
+    padding: 0 30px;
+}
+.news_header>h2 {
+    float: left;
+    font-size: 40px;
+}
+
+.news_header>h5 {
+    float: right;
+    font-size: 20px;
+}
+
+.news_container {
+    /* height: 300px; */
+}
+.news_container ul li {
+    float: left;
+    width: 300px;
+    background-color: lightpink;
+    border: 2px solid black;
+    text-align: center;
+    margin: 0 45px ;
+    padding-bottom: 30px;
+}
+
+.news_container ul li h4,
+.news_container ul li p {
+    text-align: left;
+    margin: 10px 40px;
+    color: #000;
+}
+
+.news_container ul li h4 {
+    font-size: 16px;
+    
+}
+.news_container ul li img {
+    /* height: 300px; */
+    width: 80%;
+}
+
+/* how to play  */
+.how_to_play {
+    height: 800px;
+    background-color:antiquewhite ;
+}
+
+.how_to_play_header {
+    text-align: center;
+}
+
+.how_to_play_header h3 {
+    font-size: 60px;
+    color: white;
+}
+
+.how_to_play p {
+    font-size: 18px;
+    color: #000;
+}
+
+.how_to_play_video {
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+
+/* game on  */
+.game_on {
+    
+}
+
+.game_on_header {
+    text-align: center;
+}
+
+.game_on_header h4 {
+    font-size: 18px;
+}
+
+.game_on_header h3 {
+    font-size: 60px;
+}
+
+.game_on_header button{
+    display: block;
+    height: 50px;
+    width: 230px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: skyblue;
+    transition: width 0.15s;
+}
+
+.game_on_header button:hover {
+    width: 200px;
+}
+
+.chest_board {
+    position: relative;
+    height: 600px;
+}
+
+.chest_board img{
+    width: 100%;
+}
+
+.chest_board .layer_background {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.chest_board .layer1 {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.chest_board .layer2 {
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+}
+
+.chest_board .layer3 {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+}
+
