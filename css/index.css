@@ -1,0 +1,158 @@
+/* showpage  */
+.showpage {
+  height: 1000px;
+  background-color: orange;
+  text-align: center;
+}
+
+.showpage .vid_container {
+  position: relative;
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.showpage .vid_container .vid {
+    height: 600px;
+    width: 800px;
+}
+
+.showpage .vid_container .vid_cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 600px;
+  width: 800px;
+  background: rgb(0, 0, 0, 0.3) 
+}
+
+.showpage .vid_container .vid_cover>img {
+  height: 200px;
+  width: 400px;
+  margin: 90px auto;
+}
+
+.showpage .vid_container .vid_cover button {
+    display: block;
+    height: 50px;
+    width: 230px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: skyblue;
+}
+.showpage .vid_container .vid_cover button:hover {
+    background-color: aliceblue;
+}
+.showpage .vid_container .vid_cover h5 {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-top: 20px;
+}
+
+.showpage .vid_container .vid_cover .download_app {
+    background-color: blue;
+    height: 100px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.showpage .vid_container .vid_cover .download_app .google_store {
+    background-color: gray;
+    width: 150px;
+}
+
+.showpage .vid_container .vid_cover .download_app .apple_store {
+    width: 120px;
+}
+
+/* battle start  */
+.battle {
+    position: relative;
+    background-color: yellow;
+    text-align: center;
+}
+
+.battle h3 {
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+}
+
+.battle p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.battle button {
+    height: 50px;
+    width: 230px;
+    margin: 65px auto;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: skyblue;
+}
+
+.battle .pengu {
+    position: absolute;
+    top: -200px;
+    right: -60px;
+    width: 300px;
+    z-index: 1;
+}
+
+.battle .portal {
+    position: absolute;
+    bottom: -100px;
+    left: -60px;
+    width: 300px;
+    z-index: 1;
+}
+
+
+/* mobile start  */
+.mobile {
+    background-color: lightcoral;
+    text-align: center;
+}
+
+.mobile h3 {
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+}
+
+.mobile p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mobile_demo {
+    position: relative;
+    height: 500px;
+    background-color: yellow;
+
+}
+
+.mobile_demo .phone_frame {
+    width: 800px;
+    z-index: 1;
+}
+
+.mobile_demo .phone_cover {
+    position: absolute;
+    top: 80px;
+    left: 305px;
+    width: 590px;
+    height: 310px;
+
+}
+
+.mobile_demo .phone_cloud {
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    width: 580px;
+    z-index: 1;
+}
