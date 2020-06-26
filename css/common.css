@@ -13,7 +13,6 @@
 
 body {
   font-family: Spiegel, NotoSans-Medium, "Arial Narrow", Arial, sans-serif;
-  
 }
 
 body {
@@ -21,7 +20,12 @@ body {
   -webkit-tap-highlight-color: transparent;
   color: rgb(11, 11, 12);
   font-size: 16px;
-  background-color: rgb(254, 246, 243);
+  background: linear-gradient(
+    rgb(255, 208, 0),
+    orange,
+    rgb(255, 208, 0),
+    orange
+  ) !important;
 }
 /* 版心 */
 .w {
@@ -61,11 +65,16 @@ body {
 }
 
 .riot_fist {
-  width: 160px;
-  height: 160px;
+  width: 60px;
+  height: 60px;
   background: url(../images/fistsprite.png) no-repeat;
-  background-position: 0 -2400px;
-  transition: background-position 0.15s ;
+  background-position: 0 -900px;
+  background-size: 60px;
+  transition: background-position 0.15s;
+}
+
+svg {
+  z-index: 2;
 }
 
 .riot_fist:hover {
